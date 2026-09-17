@@ -17,6 +17,19 @@ address{font-style:normal}
 .brand-identity{text-align:center;line-height:50px}
 .brand-identity img{position:relative;top:-3px;vertical-align:baseline}
 .sns-share-box{position:absolute;top:8px;right:10px}
+.sns-share-box > ul:after{content:'';display:block;clear:both}
+.sns-share-box > ul > li{float:left;margin:0 2px}
+.sns-share-box > ul > li > a{display:block;width:18px;height:18px;background:url(../img/sns-ione.svg) no-repeat;background-size:90px auto;text-indent:-9999em;overflow:hidden}
+.sns-share-box a.sns-cafe{background-position:-0px 0}
+.sns-share-box a.sns-blog{background-position:-18px 0}
+.sns-share-box a.sns-insta{background-position:-36px 0}
+.sns-share-box a.sns-kakao{background-position:-54px 0}
+.sns-share-box a.sns-youtube{background-position:-72px 0}
+.sns-share-box a.sns-cafe:hover{background-position:-0px -18px}
+.sns-share-box a.sns-blog:hover{background-position:-18px -18px}
+.sns-share-box a.sns-insta:hover{background-position:-36px -18px}
+.sns-share-box a.sns-kakao:hover{background-position:-54px -18px}
+.sns-share-box a.sns-youtube:hover{background-position:-72px -18px}
 .btn-sns-more{display:block;width:30px;height:30px;background:url(../img/sp-common_m.png) no-repeat 0 -15px;background-size:150px;color:transparent;font-size:0}
 
 /* SNS 공유 모달 */

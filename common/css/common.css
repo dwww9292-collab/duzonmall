@@ -46,19 +46,29 @@ body .joins_gnb .slogo a {margin:0 auto;padding:0 !important;width:118px !import
 .sns-share-box{float:right;margin-top:14px}
 .sns-share-box > ul:after{content:'';display:block;clear:both}
 .sns-share-box > ul > li{float:left;margin:0 5px}
-.sns-share-box > ul > li > a{display:block;width:20px;height:20px;background:url(../img/sp-common.svg) no-repeat;background-size:200px auto;}
-.sns-share-box a.sns-fb{background-position:-100px -20px}
-.sns-share-box a.sns-tw{background-position:-120px -20px}
+.sns-share-box > ul > li > a{display:block;width:20px;height:20px;background:url(../img/sns-ione.svg) no-repeat;background-size:100px auto;}
+.sns-share-box a.sns-cafe{background-position:-0px 0}
+.sns-share-box a.sns-blog{background-position:-20px 0}
+.sns-share-box a.sns-insta{background-position:-40px 0}
+.sns-share-box a.sns-kakao{background-position:-60px 0}
+.sns-share-box a.sns-youtube{background-position:-80px 0}
+.sns-share-box a.sns-cafe:hover{background-position:-0px -20px}
+.sns-share-box a.sns-blog:hover{background-position:-20px -20px}
+.sns-share-box a.sns-insta:hover{background-position:-40px -20px}
+.sns-share-box a.sns-kakao:hover{background-position:-60px -20px}
+.sns-share-box a.sns-youtube:hover{background-position:-80px -20px}
+
+
 /*.sns-share-box a.sns-tw{background:url(../img/twitter.svg) no-repeat center center;  background-size:30px;}*/
-.sns-share-box a.sns-ks{background-position:-140px -20px}
-.sns-share-box a.sns-li{background-position:-160px -20px}
-.sns-share-box a.sns-more{background-position:-180px -20px}
-.sns-share-box a.sns-fb:hover{background-position:0 -20px}
-.sns-share-box a.sns-tw:hover{background-position:-20px -20px}
+
+
+
+
+
 /*.sns-share-box a.sns-tw:hover{background:url(../img/twitter_over.svg) no-repeat center center; background-size:30px;}*/
-.sns-share-box a.sns-ks:hover{background-position:-40px -20px}
-.sns-share-box a.sns-li:hover{background-position:-60px -20px}
-.sns-share-box a.sns-more:hover{background-position:-80px -20px}
+
+
+
 .sns-more-box{overflow:hidden;padding:0;max-height:0;position:absolute;top:45px;right:40px;border:none;background:white;-webkit-transition:all .3s linear;-o-transition:all .3s linear;transition:all .3s linear}
 .sns-more-box.open{max-height:200px;padding:5px 0;border:1px solid #cac9c9}
 .sns-more-box li{margin:10px 18px;line-height:24px;font-size:12px}

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+    <title>아이원소프트뱅크 소셜 채널 아이콘</title>
+    <defs>
+        <!-- 네이버 카페 : 잔 + 잎 -->
+        <g id="cafe">
+            <path d="M10.5 16.5h15.8v6.8a7.9 7.9 0 0 1-7.9 7.9 7.9 7.9 0 0 1-7.9-7.9z" />
+            <path d="M26.8 18.6h2.4a3.9 3.9 0 0 1 0 7.8h-2.4v-2.6h2.4a1.3 1.3 0 0 0 0-2.6h-2.4z" />
+            <path d="M18.6 15.1c-.3-3.1 1.7-5.9 4.7-6.7.5 3.2-1.4 6.1-4.7 6.7z" />
+            <rect x="8.4" y="32.6" width="20" height="2.4" rx="1.2" />
+        </g>
+        <!-- 네이버 블로그 : 말풍선 -->
+        <g id="blog">
+            <path d="M9.6 9.4h20.8a3.4 3.4 0 0 1 3.4 3.4v11.4a3.4 3.4 0 0 1-3.4 3.4h-8.6l-5.8 5.4a.7.7 0 0 1-1.2-.5v-4.9h-5.2a3.4 3.4 0 0 1-3.4-3.4V12.8a3.4 3.4 0 0 1 3.4-3.4z" />
+        </g>
+        <!-- 인스타그램 : 카메라 -->
+        <g id="insta" fill="none" stroke-width="2.7">
+            <rect x="9.4" y="9.4" width="21.2" height="21.2" rx="6.2" />
+            <circle cx="20" cy="20" r="5.1" />
+            <circle cx="26.5" cy="13.5" r="1.1" stroke-width="2.2" />
+        </g>
+        <!-- 카카오톡 : 말풍선 -->
+        <g id="kakao">
+            <path d="M20 9.2c-6.9 0-12.5 4.4-12.5 9.8 0 3.5 2.3 6.5 5.7 8.2-.25.9-1.6 5.5-1.65 5.85a.6.6 0 0 0 .9.62c.45-.3 5.35-3.6 6.05-4.07.5.05 1 .07 1.5.07 6.9 0 12.5-4.4 12.5-9.8S26.9 9.2 20 9.2z" />
+        </g>
+        <!-- 유튜브 : 재생 버튼 -->
+        <g id="youtube">
+            <rect x="6.4" y="11.6" width="27.2" height="17.6" rx="5" />
+        </g>
+    </defs>
+
+    <!-- 기본 상태 : 회색 -->
+    <g fill="#898989">
+        <rect x="0" y="0" width="40" height="40" rx="5" />
+        <rect x="40" y="0" width="40" height="40" rx="5" />
+        <rect x="80" y="0" width="40" height="40" rx="5" />
+        <rect x="120" y="0" width="40" height="40" rx="5" />
+        <rect x="160" y="0" width="40" height="40" rx="5" />
+    </g>
+    <g fill="#fff">
+        <use href="#cafe" />
+        <use href="#blog" x="40" />
+        <use href="#kakao" x="120" />
+        <use href="#youtube" x="160" />
+    </g>
+    <g stroke="#fff">
+        <use href="#insta" x="80" />
+    </g>
+    <g fill="#898989" font-family="Arial, Helvetica, sans-serif" font-weight="bold" text-anchor="middle">
+        <text x="60" y="23.5" font-size="11.5" letter-spacing="-.4">blog</text>
+        <text x="140" y="23.4" font-size="9.6" letter-spacing="-.3">TALK</text>
+        <path d="M177.2 24.9v-9.8l8.5 4.9z" />
+    </g>
+
+    <!-- 마우스 오버 상태 : 브랜드 컬러 -->
+    <rect x="0" y="40" width="40" height="40" rx="5" fill="#03C75A" />
+    <rect x="40" y="40" width="40" height="40" rx="5" fill="#03C75A" />
+    <rect x="80" y="40" width="40" height="40" rx="5" fill="#D6249F" />
+    <rect x="120" y="40" width="40" height="40" rx="5" fill="#FEE500" />
+    <rect x="160" y="40" width="40" height="40" rx="5" fill="#FF0000" />
+    <g fill="#fff">
+        <use href="#cafe" y="40" />
+        <use href="#blog" x="40" y="40" />
+        <use href="#kakao" x="120" y="40" />
+        <use href="#youtube" x="160" y="40" />
+    </g>
+    <g stroke="#fff">
+        <use href="#insta" x="80" y="40" />
+    </g>
+    <g font-family="Arial, Helvetica, sans-serif" font-weight="bold" text-anchor="middle">
+        <text x="60" y="63.5" font-size="11.5" letter-spacing="-.4" fill="#03C75A">blog</text>
+        <text x="140" y="63.4" font-size="9.6" letter-spacing="-.3" fill="#FEE500">TALK</text>
+        <path d="M177.2 64.9v-9.8l8.5 4.9z" fill="#FF0000" />
+    </g>
+</svg>
