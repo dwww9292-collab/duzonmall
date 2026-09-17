@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+/* Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,select{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{width:100%;border-collapse:collapse;border-spacing:0}
+img{vertical-align:top;outline:none;border:none}
+iframe,textarea{vertical-align:top}
+address{font-style:normal}
+
+/* Top Gnb */
+.rooftop{position:fixed;z-index:1000;top:0;right:0;bottom:0;left:0;background-color:#fff;height:50px;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+.brandsolution-logo{position:absolute;top:18px;left:20px}
+.brandsolution-logo a{display:block;width:41px;height:12px;background:url(../img/sp-common_m.svg) no-repeat 0 0;background-size:150px}
+.brand-identity{text-align:center;line-height:50px}
+.brand-identity img{position:relative;top:-3px;vertical-align:baseline}
+.sns-share-box{position:absolute;top:8px;right:10px}
+.btn-sns-more{display:block;width:30px;height:30px;background:url(../img/sp-common_m.png) no-repeat 0 -15px;background-size:150px;color:transparent;font-size:0}
+
+/* SNS 공유 모달 */
+.sns-modal{position:fixed;z-index:1010;top:50px;right:0;bottom:0;left:0;opacity:0;max-height:100vh;overflow:hidden;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease; visibility: hidden; z-index:-1;}
+.sns-modal.open{opacity:1;max-height:100vh; visibility: inherit; overflow:hidden; z-index:100;}
+.sns-modal:before{content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,.5)}
+/*.sns-modal-inner{position:absolute;z-index:10;top:0;right:0;bottom:0;left:0;width:80%;height:20%;min-height:200px;margin:auto;background-color:#fff;border-radius:5px;overflow:hidden}
+.sns-modal .modal-head{position:relative;padding:12px 18px 0 18px;height:46px;font-size:1.2em;background-color:#f8f8f8; box-sizing:border-box;}
+.sns-modal .close-modal{position:absolute;top:9px;right:12px;width:30px;height:30px;border:none;color:transparent;font-size:0;background-color:transparent;background:url(../img/sp-common_m.png) no-repeat -35px -15px;background-size:150px}*/
+.sns-modal-inner{ position:absolute; z-index:10; top:0; right:0; bottom:0; left:0; width:calc(100vw - 74px); height:20%; min-height:182px; margin:auto; background-color:#fff; border-radius:4px; overflow:hidden; }
+.sns-modal .modal-head{ position:relative; margin:17px 18px 0 18px; height:39px; color:#3B3B3B; font-size:20px; letter-spacing:-.8px; font-weight:600; border-bottom:1px solid #f2f2f2; }
+.sns-modal .close-modal{ position:absolute; top:0; right:0; padding:0; width:20px; height:20px; border:none; color:transparent; font-size:0; background-color:transparent; background:url(../img/sp-common_m_2.svg) no-repeat -45px -20px; background-size:150px; }
+.sns-list{position:absolute;top:57px;right:0;bottom:0;left:0;padding:25px 25px 0 25px;text-align:center;overflow-y:auto;overflow-x:hidden}
+.sns-list:after{content:'';display:block;clear:both}
+.sns-list li{float:left;width:25%;margin-bottom:24px}
+.sns-list a{font-size:12px;text-decoration:none;color:#231f20}
+.sns-list span{display:block;padding-top:3px;}
+.sns-list i{display:inline-block;width:45px;height:45px;background:url(../img/sp-common_m_2.svg) no-repeat;background-size:150px}
+.sns-list .sns-fb i{background-position:0 -45px}
+.sns-list .sns-tw i{background-position:-45px -45px}
+.sns-list .sns-gp i{background-position:-90px -45px}
+.sns-list .sns-li i{background-position:0 -90px}
+.sns-list .sns-kt i{background-position:-45px -90px}
+.sns-list .sns-it i{background-position:-90px -90px}
+.sns-list .sns-ks i{background-position:0 -135px}
+.sns-list .sns-pk i{background-position:-45px -135px}
+.sns-list .sns-ml i{background-position:-90px -135px}

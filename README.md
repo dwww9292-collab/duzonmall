@@ -1,0 +1,65 @@
+# Amaranth 10 랜딩 페이지
+
+더존비즈온 **Amaranth 10** 소개 페이지의 정적 사이트입니다.
+
+원본: <https://innovationlab.co.kr/project/douzone2025-3/>
+
+## 배포
+
+GitHub Pages로 서비스합니다. 저장소 루트가 곧 사이트 루트입니다.
+
+- **Settings → Pages → Source**: `Deploy from a branch`
+- **Branch**: `main` / `/ (root)`
+- 배포 주소: <https://dwww9292-collab.github.io/duzonmall/>
+
+`.nojekyll` 파일이 있어 Jekyll 빌드를 건너뛰고 파일을 그대로 서빙합니다.
+
+## 구조
+
+```
+index.html              메인 페이지 (반응형)
+css/                    메인 · 서브 페이지 스타일
+js/                     jQuery, GSAP, ScrollMagic, Swiper 연동, marquee3k
+img/                    이미지 323개 (webp / svg / png / jpg)
+link/                   PC 서브 페이지 19개 (스크롤 중 열리는 상세 레이어)
+mobile/                 모바일 서브 페이지 19개 및 전용 이미지
+common/                 사이트 공통 CSS · JS · 이미지
+images/favicon/         파비콘 및 앱 아이콘
+```
+
+총 616개 파일 / 약 54MB.
+
+## 경로 정책
+
+원본은 모든 자산을 `https://innovationlab.co.kr/...` 절대경로로 참조합니다.
+이 저장소에서는 전부 **상대경로로 변환**해 원본 서버 없이도 단독으로 동작합니다.
+
+다만 다음 메타 태그는 절대경로를 그대로 두었습니다. 카카오톡·페이스북 공유
+시 미리보기 이미지가 정상적으로 뜨게 하기 위해서입니다.
+
+`canonical`, `og:url`, `og:image`, `kakao:image`, `twitter:image`
+
+## 원본과 다른 점
+
+원본 사이트에서 가져올 수 없었던 두 파일이 있습니다.
+
+- `mobile/` — 원본은 403을 돌려줍니다. 카카오 공유의 `mobileWebUrl`이 이 주소를
+  가리키므로, 404 대신 루트로 보내는 리다이렉트 페이지를 새로 넣었습니다.
+- `images/pc/article/i_noimg_journalist.jpg` — 원본에도 없는 파일(404)입니다.
+  공통 CSS의 기자 프로필 기본 이미지로, 이 페이지에서는 쓰이지 않습니다.
+
+## 외부 의존성
+
+아래는 저장소에 포함하지 않고 원격에서 불러옵니다.
+
+| 대상 | 용도 |
+| --- | --- |
+| cdn.jsdelivr.net | Pretendard 폰트, Swiper 11 |
+| cdnjs.cloudflare.com | GSAP ScrollTrigger |
+| api.joongang.co.kr | 섹션 영상 12개 |
+| googletagmanager.com | GTM (`GTM-WN6D36V`) |
+| developers.kakao.com | 카카오 공유 SDK |
+
+## 라이선스
+
+페이지 디자인과 콘텐츠의 권리는 더존비즈온에 있습니다.
