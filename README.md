@@ -55,6 +55,12 @@ images/favicon/         파비콘 및 앱 아이콘
   아이콘 자리를 확보하도록 잡아, 어떤 폰트로 렌더링되든 겹치지 않습니다.
 - **푸터 로고 링크** — Amaranth10 · OmniEsol · WEHAGO 세 로고를 각각
   아이원소프트뱅크의 해당 제품 페이지로 연결했습니다.
+- **중앙일보 GNB 제거** — 상단에 붙던 "The JoongAng" 바를 없앴습니다.
+  `layout.gnb.renderHtml()` 호출을 20개 페이지에서 제거하고, 그 바에만
+  쓰이던 외부 스타일시트(`static.joins.com`) `@import`도 함께 지웠습니다.
+  (리셋 CSS는 `common.css`가 자체적으로 갖고 있어 영향 없습니다.)
+  바가 차지하던 만큼 `.rooftop` 높이를 78px에서 46px로 줄여 헤더 아래
+  빈 공간이 생기지 않게 했습니다.
 - **도입상담 버튼** — 서브페이지 하단의 `Amaranth 10 도입상담 신청하기`를
   더존 구매문의(douzone.com)에서 아이원소프트뱅크 도입상담 페이지로
   바꿨습니다. 이 버튼은 `link/outro.html`과 `mobile/link/outro.html` 두
