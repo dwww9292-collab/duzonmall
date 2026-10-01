@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <title>네이버 블로그</title>
+  <rect x="1" y="1" width="46" height="46" rx="13" fill="#03c75a"/>
+  <path d="M12 11h24a5 5 0 0 1 5 5v14a5 5 0 0 1-5 5H24l-8 6v-6h-4a5 5 0 0 1-5-5V16a5 5 0 0 1 5-5" fill="#fff"/>
+  <g fill="none" stroke="#03c75a" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 18v11m0-4a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M21 18v11"/>
+    <ellipse cx="27" cy="25" rx="2.5" ry="3.5"/>
+    <path d="M38 22v8a2.5 2.5 0 0 1-5 0m5-5a2.5 3.5 0 1 1-5 0 2.5 3.5 0 1 1 5 0"/>
+  </g>
+</svg>

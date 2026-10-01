@@ -1,0 +1,131 @@
+/* Shared branding for the main, desktop detail and mobile detail pages. */
+:root {
+    --brand-header-height: 100px;
+}
+
+#viewport {
+    padding-top: var(--brand-header-height);
+}
+
+#roof.rooftop,
+#roof.rooftop.active {
+    position: fixed;
+    inset: 0 0 auto;
+    height: var(--brand-header-height);
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .08);
+}
+
+#roof .forehead,
+#roof.active .forehead {
+    height: var(--brand-header-height);
+}
+
+#roof .forehead .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: var(--brand-header-height);
+    padding: 0 clamp(20px, 3.2vw, 48px);
+    box-sizing: border-box;
+}
+
+#roof .forehead .inner::after,
+#roof .sns-share-box > ul::after {
+    content: none;
+}
+
+#roof .brand-identity {
+    position: static;
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    line-height: 1;
+    text-align: left;
+}
+
+#roof .brand-identity a {
+    display: block;
+    width: 280px;
+    height: 76px;
+    background: url('../../img/logo-ione-hd.png') no-repeat left center / 100% auto;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+#roof .sns-share-box {
+    position: static;
+    flex: 0 0 auto;
+    float: none;
+    margin: 0;
+}
+
+#roof .sns-share-box > ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#roof .sns-share-box > ul > li {
+    float: none;
+    margin: 0;
+}
+
+#roof .sns-share-box > ul > li > a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: var(--sns-icon) no-repeat center / 40px 40px;
+    border-radius: 12px;
+    text-indent: -9999em;
+    overflow: hidden;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+#roof .sns-share-box a.sns-cafe { --sns-icon: url('../img/sns-cafe-color.svg'); }
+#roof .sns-share-box a.sns-blog { --sns-icon: url('../img/sns-blog-color.svg'); }
+#roof .sns-share-box a.sns-insta { --sns-icon: url('../img/sns-instagram-color.svg'); }
+#roof .sns-share-box a.sns-kakao { --sns-icon: url('../img/sns-kakao-color.svg'); }
+#roof .sns-share-box a.sns-youtube { --sns-icon: url('../img/sns-youtube-color.svg'); }
+
+#roof .sns-share-box a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+#roof a:focus-visible {
+    outline: 2px solid #155eef;
+    outline-offset: 3px;
+}
+
+#roof .sns-modal { top: var(--brand-header-height); }
+.intro > .title_wrap { margin-top: 0; }
+
+@media (max-width: 800px) {
+    #roof .forehead .inner { padding-inline: 20px; gap: 16px; }
+    #roof .brand-identity a { width: 240px; height: 68px; }
+    #roof .sns-share-box > ul { gap: 6px; }
+}
+
+/* Two compact rows keep every channel visible without squeezing the logo. */
+@media (max-width: 560px) {
+    #roof .forehead .inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: 48px 44px;
+        gap: 0;
+        padding: 4px 16px;
+    }
+    #roof .brand-identity { justify-self: start; }
+    #roof .brand-identity a { width: 180px; height: 48px; }
+    #roof .sns-share-box { justify-self: end; }
+    #roof .sns-share-box > ul { gap: 6px; }
+    #roof .sns-share-box > ul > li > a { background-size: 36px 36px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #roof .sns-share-box > ul > li > a { transition: none; }
+    #roof .sns-share-box a:hover { transform: none; }
+}

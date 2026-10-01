@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <title>네이버 카페</title>
+  <rect x="1" y="1" width="46" height="46" rx="13" fill="#03c75a"/>
+  <path d="M29 19h4a6 6 0 0 1 0 12h-4v-4h4a2 2 0 0 0 0-4h-4z" fill="#fff"/>
+  <path d="M12 19h19v9a9.5 9.5 0 0 1-19 0z" fill="#fff"/>
+  <path d="M21 17c0-5 3-8 8-8 0 5-3 8-8 8" fill="#c9ffad"/>
+  <path d="M12 38h20" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,159 @@
+/* Let the platform copy participate in page scrolling at every window size. */
+#platform, #services { scroll-margin-top: var(--brand-header-height); }
+.sec5.platform {
+    display: grid;
+    grid-template-columns: clamp(300px, 28vw, 445px) minmax(0, 1fr);
+    overflow: visible;
+}
+
+.sec5.platform .fixed_area {
+    position: relative;
+    inset: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background: #7935ff;
+}
+
+.sec5.platform .fixed_area_inner {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    padding: 48px 28px;
+    box-sizing: border-box;
+}
+
+.sec5.platform.platform-copy-fits .fixed_area_inner {
+    position: sticky;
+    top: var(--brand-header-height);
+}
+
+.sec5.platform .fixed_area .__contents { margin: 0; }
+.sec5.platform .fixed_area .__contents > img { width: min(100%, 184px); height: auto; }
+.sec5.platform .fixed_area .__contents > img + img { width: min(100%, 220px); height: auto; margin-top: 28px; }
+.sec5.platform .fixed_area .txt_wrap { margin-top: 28px; }
+.sec5.platform .fixed_area .txt_wrap h4 { font-size: 28px; line-height: 1.4; letter-spacing: -1px; }
+.sec5.platform .fixed_area .txt_wrap h4 + p {
+    width: 100%;
+    max-width: 680px;
+    margin: 24px auto 0;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: -.5px;
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+.sec5.platform .scroll_area,
+.sec5.platform .scroll_area_inner { width: 100%; height: auto; min-width: 0; }
+.sec5.platform .scroll_area_inner > .list_area { padding: 64px 24px; min-height: 0; }
+.sec5.platform .scroll_area_inner > .video_area { padding: 64px 32px 130px; min-height: 0; }
+.sec5.platform .video_area .swiper-container { width: 100%; }
+.sec5.platform .video_wrap { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.sec5.platform .video_poster,
+.sec5.platform .video_poster .video_thumb,
+.sec5.platform .video_box { width: 100%; height: 100%; }
+.sec5.platform .swiper-control { left: 50%; bottom: 48px; }
+.sec5.platform .video_area .title_wrap h2 { font-size: clamp(26px, 2.6vw, 44px); line-height: 1.4; }
+
+/* All nine feature illustrations share the clay cards' original proportions. */
+.sec5.platform .grid_box.grid_3 { display: block; }
+.sec5.platform .grid_box.grid_2 { display: none; }
+.sec5.platform .grid_box .img_wrap .grid_img {
+    aspect-ratio: 424 / 307;
+    background-size: cover;
+    background-color: #e7e5f1;
+}
+.sec5.platform .grid_box .img_wrap .img_1 { background-image: url('../img/features/task-clay.png'); }
+.sec5.platform .grid_box .img_wrap .img_2 { background-image: url('../img/features/control-clay.png'); }
+.sec5.platform .grid_box .img_wrap .img_6 { background-image: url('../img/features/groupware-clay.png'); }
+.sec5.platform .grid_box .img_wrap .img_7 { background-image: url('../img/features/accounting-clay.png'); }
+.sec5.platform .grid_box .img_wrap .img_8 { background-image: url('../img/features/distribution-clay.png'); }
+.sec5.platform .grid_box .grid_container ul li.grid:hover .grid_img { background-size: cover; }
+.sec5.platform .grid_box .grid_container ul li.grid .txt_wrap { padding-block: 28px; }
+.sec5.platform .grid_box .grid_container ul li.grid .txt_wrap h6 { font-size: clamp(21px, 1.7vw, 28px); line-height: 1.45; }
+.sec5.platform .grid_box .grid_container ul li.grid .txt_wrap p { font-size: 18px; line-height: 1.6; overflow-wrap: anywhere; }
+
+/* The hero's hexagonal pattern continues behind translucent service panels. */
+.sec6.service {
+    background-color: #090613;
+    background-image: radial-gradient(ellipse at 12% 30%, rgba(121, 53, 255, .36), transparent 56%),
+        radial-gradient(ellipse at 92% 85%, rgba(71, 108, 255, .24), transparent 50%),
+        url('../img/intro_bg.min.webp');
+    background-position: center;
+    background-size: cover;
+}
+.sec6.service .__inner { width: min(1435px, calc(100% - 64px)); padding: 112px 0; }
+.sec6.service h2 { font-size: clamp(28px, 3.1vw, 52px); line-height: 1.4; letter-spacing: -1px; }
+.sec6.service .box_wrap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; gap: 24px; margin-top: 56px; }
+.sec6.service .box_wrap .__box {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 28px;
+    background: linear-gradient(130deg, rgba(255, 255, 255, .16), rgba(255, 255, 255, .06));
+    -webkit-backdrop-filter: blur(24px) saturate(140%);
+    backdrop-filter: blur(24px) saturate(140%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 20px 48px rgba(0, 0, 0, .2);
+    transition: border-color .2s ease, background-color .2s ease;
+}
+.sec6.service .box_wrap .__box:hover { border-color: rgba(255, 255, 255, .55); background-color: rgba(255, 255, 255, .07); }
+.sec6.service .box_wrap .__box a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 132px;
+    align-items: center;
+    gap: 24px;
+    min-height: 320px;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.sec6.service .box_wrap .__box a:focus-visible { outline: 3px solid #c7b5ff; outline-offset: 5px; border-radius: inherit; }
+.sec6.service .box_wrap .__box h5 { margin: 0; width: auto; font-size: clamp(24px, 2.1vw, 36px); line-height: 1.4; letter-spacing: -.8px; }
+.sec6.service .box_wrap .__box h5::after { content: none; }
+.sec6.service .box_wrap .__box a::after { content: ''; position: absolute; bottom: 28px; right: 28px; width: 18px; height: 18px; background: url('../img/sec6_arrow.svg') center / contain no-repeat; filter: brightness(0) invert(1); }
+.sec6.service .box_wrap .__box p { display: block; position: static; margin-top: 24px; font-size: 17px; line-height: 1.65; letter-spacing: -.4px; color: rgba(255, 255, 255, .88); overflow-wrap: anywhere; }
+.sec6.service .box_wrap .__box img { position: static; width: 100%; height: auto; transform: none; }
+
+@media (max-width: 1279px) {
+    .sec5.platform .grid_box.grid_3 { display: none; }
+    .sec5.platform .grid_box.grid_2 { display: block; }
+}
+
+@media (max-width: 1023px) {
+    .sec5.platform { display: block; }
+    .sec5.platform .fixed_area_inner,
+    .sec5.platform.platform-copy-fits .fixed_area_inner { position: relative; top: auto; padding: 56px 32px; }
+    .sec5.platform .fixed_area .__contents > img + img { width: min(100%, 250px); }
+    .sec5.platform .fixed_area .txt_wrap h4 + p { font-size: 19px; }
+    .sec5.platform .scroll_area_inner > .list_area { padding: 56px 24px; }
+    .sec6.service .box_wrap { grid-template-columns: 1fr; }
+    .sec6.service .box_wrap .__box a { min-height: 280px; grid-template-columns: minmax(0, 1fr) 160px; }
+}
+
+@media (max-width: 560px) {
+    .sec5.platform .fixed_area_inner { padding: 40px 24px; }
+    .sec5.platform .fixed_area .txt_wrap h4 { font-size: 26px; }
+    .sec5.platform .fixed_area .txt_wrap h4 + p { font-size: 18px; line-height: 1.75; }
+    .sec5.platform .scroll_area_inner > .list_area { padding: 40px 16px; }
+    .sec5.platform .grid_box.grid_2 .grid_container { display: block; }
+    .sec5.platform .grid_box.grid_2 .grid_container ul { width: 100% !important; }
+    .sec5.platform .grid_box .grid_container ul li.grid { padding: 0 0 28px; }
+    .sec5.platform .grid_box .grid_container ul li.grid .txt_wrap { padding: 20px 0 0; }
+    .sec5.platform .scroll_area_inner > .video_area { padding-inline: 20px; }
+    .sec6.service .__inner { width: calc(100% - 32px); padding: 72px 0; }
+    .sec6.service .box_wrap { gap: 20px; margin-top: 36px; }
+    .sec6.service .box_wrap .__box a { min-height: 0; padding: 28px 24px 48px; grid-template-columns: minmax(0, 1fr) 80px; gap: 16px; }
+    .sec6.service .box_wrap .__box .txt_wrap { display: contents; }
+    .sec6.service .box_wrap .__box h5 { grid-column: 1; grid-row: 1; }
+    .sec6.service .box_wrap .__box img { grid-column: 2; grid-row: 1; }
+    .sec6.service .box_wrap .__box p { grid-column: 1 / -1; grid-row: 2; margin-top: 4px; font-size: 16px; }
+    .sec6.service .box_wrap .__box p br { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sec6.service .box_wrap .__box { transition: none; }
+}

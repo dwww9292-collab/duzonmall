@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <title>카카오톡 채널</title>
+  <rect x="1" y="1" width="46" height="46" rx="13" fill="#fee500"/>
+  <path d="M24 10c-9 0-16 5.7-16 12.6 0 4.5 3 8.3 7.5 10.6l-2 6.7 8-4.9 2.5.2c9 0 16-5.7 16-12.6S33 10 24 10" fill="#3b1e1e"/>
+  <g fill="none" stroke="#fee500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 19a5 5 0 1 0 0 7M29 17v11m0-5a3 3 0 0 1 6 0v5"/></g>
+</svg>
