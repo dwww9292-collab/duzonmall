@@ -43,8 +43,10 @@ images/favicon/         파비콘 및 앱 아이콘
 
 원본을 그대로 미러링한 뒤, 아이원소프트뱅크용으로 아래를 수정했습니다.
 
-- **헤더 로고** — 사용자가 제공한 2084×754px 투명 PNG 원본을
-  `img/logo-ione-hd.png`로 적용했습니다. 검정 글자와 파란색 O, 하단 파트너
+- **헤더 로고** — 사용자가 제공한 2084×754px 투명 PNG 원본을 참고해
+  윤곽을 보정한 고해상도 투명 PNG `img/logo-ione-smooth.png`를 적용했습니다.
+  내장 image_gen 도구를 사용했으며 제작 조건은 `img/logo-restoration-prompt.txt`에
+  저장했습니다. 원본은 `img/logo-ione-hd.png`로 보존합니다. 검정 글자와 파란색 O, 하단 파트너
   문구를 유지합니다. 공통 스타일 `common/css/brand-header.css`가 메인 및
   PC·모바일 상세 페이지 39곳의 헤더를 100px 높이로 통일하고, 로고를 왼쪽에
   280px 너비로 배치합니다. 800px 이하에서는 240px, 560px 이하에서는
